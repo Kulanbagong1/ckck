@@ -36,12 +36,11 @@ export RECEIVE="[${YELLOW} RECEIVE ${NC}]"
 export BOLD="\e[1m"
 export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
-Repo="https://raw.githubusercontent.com/rizkihdyt6/asu/asu/"
-Repo1="https://raw.githubusercontent.com/rizkihdyt6/izinsc/main/"
+#Belum Kepikiran
 export Server_Port="443"
 export Server_IP="underfined"
 export Script_Mode="Stable"
-export Auther=".RizkiHdyt"
+export Auther="JengkolOnline VPN"
 if [ "${EUID}" -ne 0 ]; then
 echo -e "${EROR} Please Run This Script As Root User !"
 exit 1
