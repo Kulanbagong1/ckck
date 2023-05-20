@@ -1,6 +1,6 @@
 #!/bin/bash
 #installer Websocker tunneling 
-Repo="https://raw.githubusercontent.com/rizkihdyt6/asu/asu/"
+Repo="https://raw.githubusercontent.com/Kulanbagong1/ckck/main/"
 cd
 apt install python -y
 
