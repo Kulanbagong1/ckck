@@ -10,8 +10,7 @@ trx=$(grep -c -E "^#! " "/etc/xray/config.json")
 let tra=$trx/2
 ssx=$(grep -c -E "^## " "/etc/xray/config.json")
 let ssa=$ssx/2
-Repo="https://raw.githubusercontent.com/rizkihdyt6/asu/asu/"
-Repo1="https://raw.githubusercontent.com/rizkihdyt6/izinsc/main/"
+#Belum Siap Bos
 COLOR1='\033[0;35m'
 COLOR2='\033[0;39m'
 clear
@@ -66,8 +65,8 @@ persenmemori="$(echo "scale=2; $usmem*100/$tomem" | bc)"
 persencpu="$(echo "scale=2; $cpu1+$cpu2" | bc)"
 # // Exporting IP Address
 export MYIP=$( curl -s https://ipinfo.io/ip/ )
-Name=$(curl -sS ${Repo1}ip | grep $MYIP | awk '{print $2}')
-Exp=$(curl -sS ${Repo1}ip | grep $MYIP | awk '{print $3}')
+#Name=$(curl -sS ${Repo1}ip | grep $MYIP | awk '{print $2}')
+#Exp=$(curl -sS ${Repo1}ip | grep $MYIP | awk '{print $3}')
 
 # // nginx
 nginx=$( systemctl status nginx | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
@@ -97,8 +96,8 @@ echo -e "• Current Domain      = $( cat /etc/xray/domain )"
 echo -e "• Server IP           = $MYIP"
 echo -e "• ISP                 = $(cat /root/.isp)${NC}"
 echo -e "• Server Resource     = RAM = $persenmemori% | CPU = $persencpu%"
-echo -e "• Clients Name        = $Name"
-echo -e "• Expired Script VPS  = $Exp"
+#echo -e "• Clients Name        = $Name"
+#echo -e "• Expired Script VPS  = $Exp"
 echo -e "• Status Hari ini     = Mina Twice is Princess Ever"
 echo -e ""
 echo -e "$COLOR1┌────────────────────────────────────────────────────────────┐${NC}"
@@ -109,7 +108,8 @@ echo -e "$COLOR1│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJ
 echo -e "$COLOR1│  \033[0m ${Blue} $ssh1        $vma           $vla          $tra               $ssa   $NC    $COLOR1│"
 echo -e "$COLOR1└────────────────────────────────────────────────────────────┘${NC}"
 echo -e "      $COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "      $COLOR1│${NC}                 •  THE MOON  •                  $COLOR1│$NC"
+echo -e "      $COLOR1│${NC}            •  JengkolOnline VPN  •          $COLOR1│$NC"
+echo -e "      $COLOR1│${NC}               •  MENU UTAMA  •              $COLOR1│$NC"
 echo -e "      $COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
 echo -e " ${CYAN}[01]${NC} • [SSH MENU${NC}]${CYAN}[08]${NC} • [INSTALL ADS-BLOCK${NC}]${CYAN}[15]${NC} • [RUNNING${NC}]"
@@ -117,6 +117,8 @@ echo -e " ${CYAN}[02]${NC} • [VMESS${NC}]   ${CYAN}[09]${NC} • [ADS-BLOCK ME
 echo -e " ${CYAN}[03]${NC} • [VLESS${NC}]   ${CYAN}[10]${NC} • [CEK-TRAFIK${NC}]       ${CYAN}[17]${NC} • [INFO${NC}]"
 echo -e " ${CYAN}[04]${NC} • [TROJAN${NC}]  ${CYAN}[11]${NC} • [CEK BANDWIDTH${NC}]    ${CYAN}[18]${NC} • [CLEARLOG${NC}]"
 echo -e " ${CYAN}[05]${NC} • [SSWS ${NC}]   ${CYAN}[12]${NC} • [UPDATE-SCRIPT${NC}]    ${CYAN}[19]${NC} • [REBOOT${NC}]"
+echo -e "$COLOR1┌────────────────────────────────────────────────────────────┐${NC}"
+echo -e "$COLOR1└────────────────────────────────────────────────────────────┘${NC}"
 echo -e " ${CYAN}[06]${NC} • [ADD-HOST${NC}]${CYAN}[13]${NC} • [RESTART SERVICE${NC}]     "
 echo -e " ${CYAN}[07]${NC} • [GEN-CERT${NC}]${CYAN}[14]${NC} • [AUTO-POINTING${NC}] "
 echo -e "$COLOR1└────────────────────────────────────────────────────────────┘${NC}"
