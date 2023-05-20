@@ -18,8 +18,7 @@ IPurple='\033[0;95m'      # Purple
 ICyan='\033[0;96m'        # Cyan
 IWhite='\033[0;97m'       # White
 NC='\e[0m'
-Repo="https://raw.githubusercontent.com/rizkihdyt6/asu/asu/"
-Repo1="https://raw.githubusercontent.com/rizkihdyt6/izinsc/main/"
+#Belum Kepikiran
 COLOR1='\033[0;35m'
 green() { echo -e "\\033[32;1m${*}\\033[0m"; }
 red() { echo -e "\\033[31;1m${*}\\033[0m"; }
@@ -45,7 +44,7 @@ export Server1_URL="raw.githubusercontent.com/Zeastore/limit/main"
 export Server_Port="443"
 export Server_IP="underfined"
 export Script_Mode="Stable"
-export Auther=".geovpn"
+export Auther=".JengkolOnline VPN"
 if [ "${EUID}" -ne 0 ]; then
 echo -e "${EROR} Please Run This Script As Root User !"
 exit 1
