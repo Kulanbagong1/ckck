@@ -29,7 +29,7 @@ export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
 mkdir /user/curent > /dev/null 2>&1
 touch /user/current
-Repo="https://raw.githubusercontent.com/rizkihdyt6/asu/asu/"
+Repo="https://raw.githubusercontent.com/Kulanbagong1/ckck/main/"
 clear
 echo "IP=$domain" > /var/lib/scrz-prem/ipvps.conf
 if [[ "$IP" = "" ]]; then
