@@ -6,7 +6,7 @@
 export DEBIAN_FRONTEND=noninteractive
 MYIP=$(wget -qO- ipinfo.io/ip);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
-Repo="https://raw.githubusercontent.com/rizkihdyt6/asu/asu/"
+Repo="https://raw.githubusercontent.com/Kulanbagong1/ckck/main/"
 NET=$(ip -o $ANU -4 route show to default | awk '{print $5}');
 source /etc/os-release
 ver=$VERSION_ID
