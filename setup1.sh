@@ -7,33 +7,29 @@ tyblue='\e[1;36m'
 NC='\e[0m'
 COLOR1='\033[0;35m'
 Repo="https://raw.githubusercontent.com/Kulanbagong1/ckck/main/"
-#Repo1="https://raw.githubusercontent.com/rizkihdyt6/izinsc/main/"
-
-localip=$(hostname -I | cut -d\  -f1)
-hst=( `hostname` )
-dart=$(cat /etc/hosts | grep -w `hostname` | awk '{print $2}')
+Repo1="https://raw.githubusercontent.com/Kulanbagong1/izinn/main/"
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
-#echo "Checking VPS"
-#CEKEXPIRED () {
-#    today=$(date -d +1day +%Y-%m-%d)
-#    Exp1=$(curl -sS ${Repo1}ip | grep $MYIP | awk '{print $3}')
-#    if [[ $today < $Exp1 ]]; then
-#    echo -e "\e[32mSTATUS SCRIPT AKTIF...\e[0m"
-#    else
-#    echo -e "\e[31mSCRIPT ANDA EXPIRED!\e[0m";
-$    exit 0
-#fi
-#}
-#IZIN=$(curl -sS ${Repo1}ip | awk '{print $4}' | grep $MYIP)
-#if [ $MYIP = $IZIN ]; then
-#echo -e "\e[32mPermission Accepted...\e[0m"
-#CEKEXPIRED
-#else
-#echo -e "\e[31mPermission Denied!\e[0m";
-#exit 0
-#fi
-#clear
+echo "Checking VPS"
+CEKEXPIRED () {
+    today=$(date -d +1day +%Y-%m-%d)
+    Exp1=$(curl -sS ${Repo1}ip | grep $MYIP | awk '{print $3}')
+    if [[ $today < $Exp1 ]]; then
+    echo -e "\e[32mSTATUS SCRIPT AKTIF...\e[0m"
+    else
+    echo -e "\e[31mSCRIPT ANDA EXPIRED!\e[0m";
+    exit 0
+fi
+}
+IZIN=$(curl -sS ${Repo1}ip | awk '{print $4}' | grep $MYIP)
+if [ $MYIP = $IZIN ]; then
+echo -e "\e[32mPermission Accepted...\e[0m"
+CEKEXPIRED
+else
+echo -e "\e[31mPermission Denied!\e[0m";
+exit 0
+fi
+clear
 
 if [[ "$hst" != "$dart" ]]; then
 echo "$localip $(hostname)" >> /etc/hosts
