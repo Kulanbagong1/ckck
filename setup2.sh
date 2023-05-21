@@ -6,8 +6,8 @@ yell='\e[1;33m'
 tyblue='\e[1;36m'
 NC='\e[0m'
 COLOR1='\033[0;35m'
-Repo="https://raw.githubusercontent.com/rizkihdyt6/asu/asu/"
-Repo1="https://raw.githubusercontent.com/rizkihdyt6/izinsc/main/"
+Repo="https://raw.githubusercontent.com/Kulanbagong1/ckck/main/"
+Repo1="https://raw.githubusercontent.com/Kulanbagong1/izinn/main/"
 
 localip=$(hostname -I | cut -d\  -f1)
 hst=( `hostname` )
