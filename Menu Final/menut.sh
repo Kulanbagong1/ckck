@@ -29,7 +29,7 @@ echo -e "$COLOR1└────────────────────�
 echo -e " $COLOR1┌───────────────────────────────────────────────┐${NC}"
 echo -e " $COLOR1│$NC   ${COLOR1}[01]${NC} • ADD TROJAN    ${COLOR1}[03]${NC} • DELETE TROJAN${NC}   $COLOR1│$NC"
 echo -e " $COLOR1│$NC   ${COLOR1}[02]${NC} • RENEW TROJAN${NC}  ${COLOR1}[04]${NC} • USER ONLINE     $COLOR1│$NC"
-echo -e " $COLOR1│$NC                                              ${NC} $COLOR1│$NC"
+echo -e " $COLOR1│$NC   ${COLOR1}[05]${NC} • TRIAL TROJAN${NC}                                           ${NC} $COLOR1│$NC"
 echo -e " $COLOR1│$NC   ${COLOR1}[00]${NC} • GO BACK${NC}                              $COLOR1│$NC"
 echo -e " $COLOR1└───────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
@@ -43,6 +43,7 @@ case $opt in
 2) clear ; renet ;;
 3) clear ; delt ;;
 4) clear ; cekt ;;
+5) clear ;trialtrojan ;;
 0) clear ; menu ;;
 *) clear ; menut ;;
 esac
