@@ -66,11 +66,11 @@ export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
 
 echo -e "${PURPLE}┌─────────────────────────────────────────────────┐${NC}"
-echo -e "${PURPLE}│${NC}              • VMESS PANEL MENU •              ${NC} ${PURPLE}│$NC"
+echo -e "${PURPLE}│${NC}              • TROJAN-GO PANEL MENU •              ${NC} ${PURPLE}│$NC"
 echo -e "${PURPLE}└─────────────────────────────────────────────────┘${NC}"
 echo -e " ${PURPLE}┌───────────────────────────────────────────────┐${NC}"
-echo -e " ${PURPLE}│$NC   ${COLOR1}[01]${NC} • ADD VMESS      ${COLOR1}[03]${NC} • DELETE VMESS${NC}   ${PURPLE}│$NC"
-echo -e " ${PURPLE}│$NC   ${COLOR1}[02]${NC} • RENEW VMESS${NC}    ${COLOR1}[04]${NC} • USER ONLINE    ${PURPLE}│$NC"
+echo -e " ${PURPLE}│$NC   ${COLOR1}[01]${NC} • ADD TROJAN-GO${NC}      ${COLOR1}[03]${NC} • DELETE TROJAN-GO${NC}   ${PURPLE}│$NC"
+echo -e " ${PURPLE}│$NC   ${COLOR1}[02]${NC} • RENEW TROJAN-GO${NC}    ${COLOR1}[04]${NC} • USER ONLINE    ${PURPLE}│$NC"
 echo -e " ${PURPLE}│$NC                                              ${NC} ${PURPLE}│$NC"
 echo -e " ${PURPLE}│$NC   ${COLOR1}[00]${NC} • GO BACK${NC}                              ${PURPLE}│$NC"
 echo -e " ${PURPLE}└───────────────────────────────────────────────┘${NC}"
@@ -81,10 +81,10 @@ echo -e ""
 read -p " Select menu :  "  opt
 echo -e ""
 case $opt in
-1) clear ; addv ;;
-2) clear ; renev ;;
-3) clear ; delv ;;
-4) clear ; cekv ;;
+1) clear ; addtrgo ;;
+2) clear ; renewtrgo ;;
+3) clear ; deltrgo ;;
+4) clear ; cektrgo ;;
 0) clear ; menu ;; 
 x) exit ;; 
 *) echo -e "Press any key to back exit" ; sleep 1 ; menuv ;;
