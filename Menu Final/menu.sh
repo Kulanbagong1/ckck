@@ -10,7 +10,8 @@ trx=$(grep -c -E "^#! " "/etc/xray/config.json")
 let tra=$trx/2
 ssx=$(grep -c -E "^## " "/etc/xray/config.json")
 let ssa=$ssx/2
-#Belum Siap Bos
+Repo="https://raw.githubusercontent.com/Kulanbagong1/ckck/main/"
+Repo1="https://raw.githubusercontent.com/Kulanbagong1/izinn/main/"
 COLOR1='\033[0;35m'
 COLOR2='\033[0;39m'
 clear
@@ -65,8 +66,8 @@ persenmemori="$(echo "scale=2; $usmem*100/$tomem" | bc)"
 persencpu="$(echo "scale=2; $cpu1+$cpu2" | bc)"
 # // Exporting IP Address
 export MYIP=$( curl -s https://ipinfo.io/ip/ )
-#Name=$(curl -sS ${Repo1}ip | grep $MYIP | awk '{print $2}')
-#Exp=$(curl -sS ${Repo1}ip | grep $MYIP | awk '{print $3}')
+Name=$(curl -sS ${Repo1}ip | grep $MYIP | awk '{print $2}')
+Exp=$(curl -sS ${Repo1}ip | grep $MYIP | awk '{print $3}')
 
 # // nginx
 nginx=$( systemctl status nginx | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
