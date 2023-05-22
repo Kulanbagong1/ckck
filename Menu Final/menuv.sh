@@ -71,7 +71,7 @@ echo -e "${PURPLE}└───────────────────�
 echo -e " ${PURPLE}┌───────────────────────────────────────────────┐${NC}"
 echo -e " ${PURPLE}│$NC   ${COLOR1}[01]${NC} • ADD VMESS      ${COLOR1}[03]${NC} • DELETE VMESS${NC}   ${PURPLE}│$NC"
 echo -e " ${PURPLE}│$NC   ${COLOR1}[02]${NC} • RENEW VMESS${NC}    ${COLOR1}[04]${NC} • USER ONLINE    ${PURPLE}│$NC"
-echo -e " ${PURPLE}│$NC                                              ${NC} ${PURPLE}│$NC"
+echo -e " ${PURPLE}│$NC   ${COLOR1}[05]${NC} • TRIAL VAMESS${NS}                                           ${NC} ${PURPLE}│$NC"
 echo -e " ${PURPLE}│$NC   ${COLOR1}[00]${NC} • GO BACK${NC}                              ${PURPLE}│$NC"
 echo -e " ${PURPLE}└───────────────────────────────────────────────┘${NC}"
 echo -e "${PURPLE}┌────────────────────── BY ───────────────────────┐${NC}"
@@ -85,6 +85,7 @@ case $opt in
 2) clear ; renev ;;
 3) clear ; delv ;;
 4) clear ; cekv ;;
+5) clear ; trialvmess ;;
 0) clear ; menu ;; 
 x) exit ;; 
 *) echo -e "Press any key to back exit" ; sleep 1 ; menuv ;;
