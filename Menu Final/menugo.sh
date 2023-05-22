@@ -71,7 +71,7 @@ echo -e "${PURPLE}└───────────────────�
 echo -e " ${PURPLE}┌───────────────────────────────────────────────┐${NC}"
 echo -e " ${PURPLE}│$NC   ${COLOR1}[01]${NC} • ADD TROJAN-GO${NC}      ${COLOR1}[03]${NC} • DELETE TROJAN-GO${NC}   ${PURPLE}│$NC"
 echo -e " ${PURPLE}│$NC   ${COLOR1}[02]${NC} • RENEW TROJAN-GO${NC}    ${COLOR1}[04]${NC} • USER ONLINE    ${PURPLE}│$NC"
-echo -e " ${PURPLE}│$NC                                              ${NC} ${PURPLE}│$NC"
+echo -e " ${PURPLE}│$NC   ${COLOR1}[05]${NC} • TRIAL TROJAN-GO${NS}                                          ${NC} ${PURPLE}│$NC"
 echo -e " ${PURPLE}│$NC   ${COLOR1}[00]${NC} • GO BACK${NC}                              ${PURPLE}│$NC"
 echo -e " ${PURPLE}└───────────────────────────────────────────────┘${NC}"
 echo -e "${PURPLE}┌────────────────────── BY ───────────────────────┐${NC}"
@@ -85,6 +85,7 @@ case $opt in
 2) clear ; renewtrgo ;;
 3) clear ; deltrgo ;;
 4) clear ; cektrgo ;;
+5) clear ; trialtrojango ;;
 0) clear ; menu ;; 
 x) exit ;; 
 *) echo -e "Press any key to back exit" ; sleep 1 ; menuv ;;
