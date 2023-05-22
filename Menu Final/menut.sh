@@ -43,7 +43,7 @@ case $opt in
 2) clear ; renet ;;
 3) clear ; delt ;;
 4) clear ; cekt ;;
-5) clear ;trialtrojan ;;
+5) clear ; trtt ;;
 0) clear ; menu ;;
 *) clear ; menut ;;
 esac
