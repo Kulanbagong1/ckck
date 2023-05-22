@@ -132,7 +132,7 @@ case $opt in
 3) clear ; menul ;;
 4) clear ; menut ;;
 5) clear ; menus ;;
-6) clear ;
+6) clear ; menugo ;;
 7) clear ; add-host ;;
 8) clear ; genssl ;;
 9) clear ; rm -rf /usr/local/sbin/helium && wget -q -O /usr/local/sbin/helium https://raw.githubusercontent.com/abidarwish/helium/main/helium.sh && chmod +x /usr/local/sbin/helium && helium ;;
