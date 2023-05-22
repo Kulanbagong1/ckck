@@ -85,7 +85,7 @@ case $opt in
 2) clear ; renev ;;
 3) clear ; delv ;;
 4) clear ; cekv ;;
-5) clear ; trialvmess ;;
+5) clear ; trtv ;;
 0) clear ; menu ;; 
 x) exit ;; 
 *) echo -e "Press any key to back exit" ; sleep 1 ; menuv ;;
