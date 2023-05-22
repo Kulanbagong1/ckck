@@ -29,6 +29,7 @@ wget -q -O /usr/bin/menus "${Repo}Menu%20Final/menus.sh"
 wget -q -O /usr/bin/menussh "${Repo}Menu%20Final/menussh.sh"
 wget -q -O /usr/bin/usern "${Repo}Menu%20Final/usern.sh"
 wget -q -O /usr/bin/menu "${Repo}Menu%20Final/menu.sh"
+wget -q -O /usr/bin/menu "${Repo}Menu%20Final/menugo.sh"
 #lain-lain
 wget -q -O /usr/bin/add-host "${Repo}Menu%20Final/Lain/add-host.sh"
 wget -q -O /usr/bin/domaingratis "${Repo}domaingratis"
