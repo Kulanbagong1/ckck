@@ -29,7 +29,7 @@ echo -e "$COLOR1└────────────────────�
 echo -e " $COLOR1┌───────────────────────────────────────────────┐${NC}"
 echo -e " $COLOR1│$NC   ${COLOR1}[01]${NC} • ADD VLESS      ${COLOR1}[03]${NC} • DELETE VLESS${NC}   $COLOR1│$NC"
 echo -e " $COLOR1│$NC   ${COLOR1}[02]${NC} • RENEW VLESS${NC}    ${COLOR1}[04]${NC} • USER ONLINE    $COLOR1│$NC"
-echo -e " $COLOR1│$NC                                              ${NC} $COLOR1│$NC"
+echo -e " $COLOR1│$NC   ${COLOR1}[05]${NC} • TRIAL VLESS                                           ${NC} $COLOR1│$NC"
 echo -e " $COLOR1│$NC   ${COLOR1}[00]${NC} • GO BACK${NC}                              $COLOR1│$NC"
 echo -e " $COLOR1└───────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
@@ -43,6 +43,7 @@ case $opt in
 2) clear ; renel ;;
 3) clear ; dell ;;
 4) clear ; cekl ;;
+5) clear ; trialvless ;;
 0) clear ; menu ;;
 *) clear ; menul ;;
 esac
