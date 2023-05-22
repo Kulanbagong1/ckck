@@ -112,15 +112,16 @@ echo -e "      $COLOR1│${NC}            •  JengkolOnline VPN  •          $
 echo -e "      $COLOR1│${NC}               •  MENU UTAMA  •              $COLOR1│$NC"
 echo -e "      $COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e ""
-echo -e " ${CYAN}[01]${NC} • [SSH MENU${NC}]${CYAN}[08]${NC} • [INSTALL ADS-BLOCK${NC}]${CYAN}[15]${NC} • [RUNNING${NC}]"
-echo -e " ${CYAN}[02]${NC} • [VMESS${NC}]   ${CYAN}[09]${NC} • [ADS-BLOCK MENU${NC}]   ${CYAN}[16]${NC} • [SPEEDTEST${NC}]"
-echo -e " ${CYAN}[03]${NC} • [VLESS${NC}]   ${CYAN}[10]${NC} • [CEK-TRAFIK${NC}]       ${CYAN}[17]${NC} • [INFO${NC}]"
-echo -e " ${CYAN}[04]${NC} • [TROJAN${NC}]  ${CYAN}[11]${NC} • [CEK BANDWIDTH${NC}]    ${CYAN}[18]${NC} • [CLEARLOG${NC}]"
-echo -e " ${CYAN}[05]${NC} • [SSWS ${NC}]   ${CYAN}[12]${NC} • [UPDATE-SCRIPT${NC}]    ${CYAN}[19]${NC} • [REBOOT${NC}]"
+echo -e " ${CYAN}[01]${NC} • [SSH MENU${NC}]${CYAN}[09]${NC} • [INSTALL ADS-BLOCK${NC}]${CYAN}[16]${NC} • [RUNNING${NC}]"
+echo -e " ${CYAN}[02]${NC} • [VMESS${NC}]   ${CYAN}[10]${NC} • [ADS-BLOCK MENU${NC}]   ${CYAN}[17]${NC} • [SPEEDTEST${NC}]"
+echo -e " ${CYAN}[03]${NC} • [VLESS${NC}]   ${CYAN}[11]${NC} • [CEK-TRAFIK${NC}]       ${CYAN}[18]${NC} • [INFO${NC}]"
+echo -e " ${CYAN}[04]${NC} • [TROJAN${NC}]  ${CYAN}[12]${NC} • [CEK BANDWIDTH${NC}]    ${CYAN}[19]${NC} • [CLEARLOG${NC}]"
+echo -e " ${CYAN}[05]${NC} • [SSWS ${NC}]   ${CYAN}[13]${NC} • [UPDATE-SCRIPT${NC}]    ${CYAN}[20]${NC} • [REBOOT${NC}]"
+echo -e " ${CYAN}[06]${NC} • [Trojan Go ${NC}]"
 echo -e "$COLOR1┌────────────────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1└────────────────────────────────────────────────────────────┘${NC}"
-echo -e " ${CYAN}[06]${NC} • [ADD-HOST${NC}]${CYAN}[13]${NC} • [RESTART SERVICE${NC}]     "
-echo -e " ${CYAN}[07]${NC} • [GEN-CERT${NC}]${CYAN}[14]${NC} • [AUTO-POINTING${NC}] "
+echo -e " ${CYAN}[07]${NC} • [ADD-HOST${NC}]${CYAN}[14]${NC} • [RESTART SERVICE${NC}]     "
+echo -e " ${CYAN}[08]${NC} • [GEN-CERT${NC}]${CYAN}[15]${NC} • [AUTO-POINTING${NC}] "
 echo -e "$COLOR1└────────────────────────────────────────────────────────────┘${NC}"
 echo -e " [X]${NC} • [PRESS X TO EXIT]"
 echo -e ""
@@ -131,20 +132,21 @@ case $opt in
 3) clear ; menul ;;
 4) clear ; menut ;;
 5) clear ; menus ;;
-6) clear ; add-host ;;
-7) clear ; genssl ;;
-8) clear ; rm -rf /usr/local/sbin/helium && wget -q -O /usr/local/sbin/helium https://raw.githubusercontent.com/abidarwish/helium/main/helium.sh && chmod +x /usr/local/sbin/helium && helium ;;
-9) clear ; helium ;;
-10) clear ; cek-trafik ;;
-11) clear ; cek-bandwidth ;;
-12) clear ; updatsc ;;
-13) clear ; restartsc ;;
-14) clear ; domaingratis ;;
-15) clear ; running ;;
-16) clear ; cek-speed ;;
-17) clear ; cat /root/log-install.txt ;;
-18) clear ; clearlog ;;
-19) clear ; reboot ;;
+6) clear ;
+7) clear ; add-host ;;
+8) clear ; genssl ;;
+9) clear ; rm -rf /usr/local/sbin/helium && wget -q -O /usr/local/sbin/helium https://raw.githubusercontent.com/abidarwish/helium/main/helium.sh && chmod +x /usr/local/sbin/helium && helium ;;
+10) clear ; helium ;;
+11) clear ; cek-trafik ;;
+12) clear ; cek-bandwidth ;;
+13) clear ; updatsc ;;
+14) clear ; restartsc ;;
+15) clear ; domaingratis ;;
+16) clear ; running ;;
+17) clear ; cek-speed ;;
+18) clear ; cat /root/log-install.txt ;;
+19) clear ; clearlog ;;
+20) clear ; reboot ;;
 0) clear ; menu ;;
 x) exit ;;
 *) clear ; menu ;;
