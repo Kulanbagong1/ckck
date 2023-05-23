@@ -102,6 +102,12 @@ echo -e "SSL/TLS : $ssl" | tee -a /etc/log-create-user.log
 echo -e "UDPGW : 7100-7300" | tee -a /etc/log-create-user.log
 echo -e "PubKey : $Pub2" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1─────────────────────────────────────────────────${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1─────────────────────────────────────────────────${NC}" | tee -a /etc/log-create-user.log
+echo -e "\E[0;41;36m            AKUN DNS           \E[0m" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1─────────────────────────────────────────────────${NC}" | tee -a /etc/log-create-user.log
+echo -e "1.1.1.1:${Pub2}@${Login}:${Pass}@${nsdomain}" | tee -a /etc/log-create-user.log
+echo -e "8.8.8.8:${Pub2}@${Login}:${Pass}@${nsdomain}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1─────────────────────────────────────────────────${NC}" | tee -a /etc/log-create-user.log
 echo -e "
 GET / [protocol][crlf]Host: [host][crlf]Connection: Keep-Alive[crlf]Connection: Upgrade[crlf]Upgrade: websocket[crlf][crlf]
 " | tee -a /etc/log-create-user.log
