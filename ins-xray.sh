@@ -168,20 +168,25 @@ EOF
 
 mkdir -p /home/vps/public_html
 wget -q -O /etc/haproxy/haproxy.cfg "${GITHUB_CMD}main/fodder/FighterTunnel-examples/Haproxy" >/dev/null 2>&1
+chmod +x /etc/haproxy/haproxy.cfg
 sleep 1
 wget -O /etc/nginx/nginx.conf "${GITHUB_CMD}main/fodder/nginx/nginx.conf" >/dev/null 2>&1
+chmod +x /etc/haproxy/haproxy.cfg
 wget ${GITHUB_CMD}main/fodder/nginx/XrayFT.zip >/dev/null 2>&1
 7z e -pKarawang123@bhoikfostyahya XrayFT.zip
 rm -f XrayFT.zip
 chmod +x *
 mv * /usr/bin/
-
+sleep 1
 apt install squid -y
 wget -q -O /etc/squid/squid.conf "${GITHUB_CMD}main/fodder/FighterTunnel-examples/squid.conf" >/dev/null 2>&1
 wget -q -O /etc/default/dropbear "${GITHUB_CMD}main/fodder/FighterTunnel-examples/dropbear" >/dev/null 2>&1
 wget -q -O /etc/ssh/sshd_config "${GITHUB_CMD}main/fodder/FighterTunnel-examples/sshd_config" >/dev/null 2>&1
 wget -q -O /etc/fightertunnel.txt "${GITHUB_CMD}main/fodder/FighterTunnel-examples/banner" >/dev/null 2>&1
-
+chmod +x /etc/squid/squid.conf
+chmod +x /etc/default/dropbear
+chmod +x /etc/ssh/sshd_config
+chmod +x /etc/fightertunnel.txt
 sleep 1
 wget -q -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/vps.conf.txt"
 sleep 1
