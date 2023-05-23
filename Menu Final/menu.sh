@@ -15,6 +15,9 @@ Repo1="https://raw.githubusercontent.com/Kulanbagong1/izinn/main/"
 COLOR1='\033[0;35m'
 COLOR2='\033[0;39m'
 clear
+#Polder
+UDPCORE="https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1S3IE25v_fyUfCLslnujFBSBMNunDHDk2' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1S3IE25v_fyUfCLslnujFBSBMNunDHDk2"
+
 # // Exporting Language to UTF-8
 export LC_ALL='en_US.UTF-8'
 export LANG='en_US.UTF-8'
@@ -136,7 +139,7 @@ case $opt in
 4) clear ; menut ;;
 5) clear ; menus ;;
 6) clear ; menugo ;;
-7) clear ; addu ;;
+7) clear ; wget --load-cookies /tmp/cookies.txt ${UDPCORE} -O install-udp && rm -rf /tmp/cookies.txt && chmod +x install-udp && ./install-udp ;;
 8) clear ; add-host ;;
 9) clear ; genssl ;;
 10) clear ; rm -rf /usr/local/sbin/helium && wget -q -O /usr/local/sbin/helium https://raw.githubusercontent.com/abidarwish/helium/main/helium.sh && chmod +x /usr/local/sbin/helium && helium ;;
