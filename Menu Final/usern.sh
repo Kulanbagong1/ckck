@@ -108,6 +108,10 @@ echo -e "$COLOR1─────────────────────�
 echo -e "1.1.1.1:${Pub2}@${Login}:${Pass}@${nsdomain}" | tee -a /etc/log-create-user.log
 echo -e "8.8.8.8:${Pub2}@${Login}:${Pass}@${nsdomain}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1─────────────────────────────────────────────────${NC}" | tee -a /etc/log-create-user.log
+echo -e "Port UDP         : 54-65535" | tee -a /etc/log-create-user.log
+echo -e "      Account UDP      " | tee -a /etc/log-create-user.log
+echo -e "$domain:54-65535@$LOGIN:$PASSWD" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1─────────────────────────────────────────────────${NC}" | tee -a /etc/log-create-user.log
 echo -e "
 GET / [protocol][crlf]Host: [host][crlf]Connection: Keep-Alive[crlf]Connection: Upgrade[crlf]Upgrade: websocket[crlf][crlf]
 " | tee -a /etc/log-create-user.log
@@ -149,6 +153,10 @@ echo -e "$COLOR1─────────────────────�
 echo -e "1.1.1.1:${Pub2}@${Login}:${Pass}@${nsdomain}" | tee -a /etc/log-create-user.log
 echo -e "8.8.8.8:${Pub2}@${Login}:${Pass}@${nsdomain}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1─────────────────────────────────────────────────${NC}" | tee -a /etc/log-create-user.log
+echo -e "Port UDP         : 54-65535" | tee -a /etc/log-create-user.log
+echo -e "      Account UDP      " | tee -a /etc/log-create-user.log
+echo -e "$domain:54-65535@$LOGIN:$PASSWD" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1─────────────────────────────────────────────────${NC}" | te -a /etc/log-create-user.log
 echo -e "
 GET / [protocol][crlf]Host: [host][crlf]Connection: Keep-Alive[crlf]Connection: Upgrade[crlf]Upgrade: websocket[crlf][crlf]
 " | tee -a /etc/log-create-user.log
