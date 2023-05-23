@@ -39,16 +39,16 @@ wget -q -O /usr/bin/trialtrojango "${Repo}Menu%20Final/trialtrojango.sh && chmod
 wget -q -O /usr/bin/trtl "${Repo}Menu%20Final/trtl.sh && chmod +x /usr/bin/menuv && bash /usr/bin/trtl"
 wget -q -O /usr/bin/trtv "${Repo}Menu%20Final/trtv.sh && chmod +x /usr/bin/menuv && bash /usr/bin/trtv"
 #lain-lain
-wget -q -O /usr/bin/add-host "${Repo}Menu%20Final/Lain/add-host.sh && chmod +x /usr/bin/menuv && bash /usr/bin/menuv
-wget -q -O /usr/bin/domaingratis "${Repo}domaingratis && chmod +x /usr/bin/menuv && bash /usr/bin/menuv
-wget -q -O /usr/bin/cek-bandwidth "${Repo}Menu%20Final/Lain/cek-bandwidth.sh && chmod +x /usr/bin/menuv && bash /usr/bin/menuv
-wget -q -O /usr/bin/updatsc "${Repo}update.sh"
-wget -q -O /usr/bin/clearlog "${Repo}Menu%20Final/Lain/clearlog.sh"
-wget -q -O /usr/bin/genssl "${Repo}Menu%20Final/Lain/genssl.sh"
-wget -q -O /usr/bin/restartsc "${Repo}Menu%20Final/Lain/restart.sh"
-wget -q -O /usr/bin/running "${Repo}Menu%20Final/Lain/running.sh"
-wget -q -O /usr/bin/cek-speed "${Repo}Menu%20Final/Lain/speedtes_cli.py"
-wget -q -O /usr/bin/cek-trafik "${Repo}Menu%20Final/Lain/cek-trafik.sh"
+wget -q -O /usr/bin/add-host "${Repo}Menu%20Final/Lain/add-host.sh && chmod +x /usr/bin/menuv && bash /usr/bin/add-host"
+wget -q -O /usr/bin/domaingratis "${Repo}domaingratis && chmod +x /usr/bin/menuv && bash /usr/bin/domaingratis"
+wget -q -O /usr/bin/cek-bandwidth "${Repo}Menu%20Final/Lain/cek-bandwidth.sh && chmod +x /usr/bin/menuv && bash /usr/bin/cek-bandwidth"
+wget -q -O /usr/bin/updatsc "${Repo}update.sh && chmod +x /usr/bin/menuv && bash /usr/bin/updatesc"
+wget -q -O /usr/bin/clearlog "${Repo}Menu%20Final/Lain/clearlog.sh && chmod +x /usr/bin/menuv && bash /usr/bin/clearlog"
+wget -q -O /usr/bin/genssl "${Repo}Menu%20Final/Lain/genssl.sh && chmod +x /usr/bin/menuv && bash /usr/bin/gensll"
+wget -q -O /usr/bin/restartsc "${Repo}Menu%20Final/Lain/restart.sh && chmod +x /usr/bin/menuv && bash /usr/bin/restartsc"
+wget -q -O /usr/bin/running "${Repo}Menu%20Final/Lain/running.sh && chmod +x /usr/bin/menuv && bash /usr/bin/running"
+wget -q -O /usr/bin/cek-speed "${Repo}Menu%20Final/Lain/speedtes_cli.py && chmod +x /usr/bin/menuv && bash /usr/bin/cek-speed"
+wget -q -O /usr/bin/cek-trafik "${Repo}Menu%20Final/Lain/cek-trafik.sh && chmod +x /usr/bin/menuv && bash /usr/bin/cek-trafik"
 
 
 chmod +x /usr/bin/menuv
