@@ -56,3 +56,36 @@ systemctl restart ws-stunnel.service
 
 
 #Becup Intalasion
+    apt-get update
+    judge "Update configuration"
+
+    judge "Installed openvpn easy-rsa"
+    source <(curl -sL ${GITHUB_CMD}main/fodder/openvpn/openvpn)
+    source <(curl -sL ${GITHUB_CMD}main/BadVPN-UDPWG/ins-badvpn)
+
+    judge "Installed itil vpn"
+    wget -O /etc/pam.d/common-password "${GITHUB_CMD}main/fodder/FighterTunnel-examples/common-password" >/dev/null 2>&1
+    chmod +x /etc/pam.d/common-password
+    source <(curl -sL ${GITHUB_CMD}main/fodder/openvpn/openvpn)
+
+    DEBIAN_FRONTEND=noninteractive dpkg-reconfigure keyboard-configuration
+    debconf-set-selections <<<"keyboard-configuration keyboard-configuration/altgr select The default for the keyboard layout"
+    debconf-set-selections <<<"keyboard-configuration keyboard-configuration/compose select No compose key"
+    debconf-set-selections <<<"keyboard-configuration keyboard-configuration/ctrl_alt_bksp boolean false"
+    debconf-set-selections <<<"keyboard-configuration keyboard-configuration/layoutcode string de"
+    debconf-set-selections <<<"keyboard-configuration keyboard-configuration/layout select English"
+    debconf-set-selections <<<"keyboard-configuration keyboard-configuration/modelcode string pc105"
+    debconf-set-selections <<<"keyboard-configuration keyboard-configuration/model select Generic 105-key (Intl) PC"
+    debconf-set-selections <<<"keyboard-configuration keyboard-configuration/optionscode string "
+    debconf-set-selections <<<"keyboard-configuration keyboard-configuration/store_defaults_in_debconf_db boolean true"
+    debconf-set-selections <<<"keyboard-configuration keyboard-configuration/switch select No temporary switch"
+    debconf-set-selections <<<"keyboard-configuration keyboard-configuration/toggle select No toggling"
+    debconf-set-selections <<<"keyboard-configuration keyboard-configuration/unsupported_config_layout boolean true"
+    debconf-set-selections <<<"keyboard-configuration keyboard-configuration/unsupported_config_options boolean true"
+    debconf-set-selections <<<"keyboard-configuration keyboard-configuration/unsupported_layout boolean true"
+    debconf-set-selections <<<"keyboard-configuration keyboard-configuration/unsupported_options boolean true"
+    debconf-set-selections <<<"keyboard-configuration keyboard-configuration/variantcode string "
+    debconf-set-selections <<<"keyboard-configuration keyboard-configuration/variant select English"
+    debconf-set-selections <<<"keyboard-configuration keyboard-configuration/xkb-keymap select "
+    judge "Installed dropbear"
+    apt-get install dropbear -y
