@@ -1,6 +1,7 @@
 #!/bin/bash
 #installer Websocker tunneling 
 Repo="https://raw.githubusercontent.com/Kulanbagong1/ckck/main/"
+GITHUB_CMD="https://github.com/Kulanbagong1/Autoscript-vps/raw/"
 cd
 apt install python -y
 
@@ -52,3 +53,6 @@ systemctl restart ws-stunnel.service
 #systemctl enable ws-ovpn.service
 #systemctl start ws-ovpn.service
 #systemctl restart ws-ovpn.service
+
+
+#Becup Intalasion
