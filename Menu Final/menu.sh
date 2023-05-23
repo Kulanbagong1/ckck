@@ -11,7 +11,7 @@ let tra=$trx/2
 ssx=$(grep -c -E "^## " "/etc/xray/config.json")
 let ssa=$ssx/2
 Repo="https://raw.githubusercontent.com/Kulanbagong1/ckck/main/"
-Repo1="https://raw.githubusercontent.com/Kulanbagong1/izinn/main/"
+#Repo1="https://raw.githubusercontent.com/Kulanbagong1/izinn/main/"
 COLOR1='\033[0;35m'
 COLOR2='\033[0;39m'
 
@@ -52,7 +52,7 @@ export Server_URL="autosc.me/aio"
 export Server_Port="443"
 export Server_IP="underfined"
 export Script_Mode="Stable"
-export Auther="XdrgVPN"
+export Auther="JENGKOLONLINE-VPN"
 
 # // Root Checking
 if [ "${EUID}" -ne 0 ]; then
@@ -69,8 +69,8 @@ persenmemori="$(echo "scale=2; $usmem*100/$tomem" | bc)"
 persencpu="$(echo "scale=2; $cpu1+$cpu2" | bc)"
 # // Exporting IP Address
 export MYIP=$( curl -s https://ipinfo.io/ip/ )
-Name=$(curl -sS ${Repo1}ip | grep $MYIP | awk '{print $2}')
-Exp=$(curl -sS ${Repo1}ip | grep $MYIP | awk '{print $3}')
+#Name=$(curl -sS ${Repo1}ip | grep $MYIP | awk '{print $2}')
+#Exp=$(curl -sS ${Repo1}ip | grep $MYIP | awk '{print $3}')
 
 # // nginx
 nginx=$( systemctl status nginx | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
@@ -126,8 +126,8 @@ echo -e "$COLOR1└────────────────────�
 echo -e "$COLOR1┌────────────────────────────────────────────────────────────┐${NC}"
 echo -e "• Current Domain      = $( cat /etc/xray/domain )"
 echo -e "• Server IP           = $MYIP"
-echo -e "• Clients Name        = $Name"
-echo -e "• Expired Script VPS  = $Exp"
+echo -e "• Clients Name        = JKLOVPN"
+echo -e "• Expired Script VPS  = LIFETIME"
 echo -e "$COLOR1└────────────────────────────────────────────────────────────┘${NC}"
 echo -e " [X]${NC} • [PRESS X TO EXIT]"
 echo -e ""
