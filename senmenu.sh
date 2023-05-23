@@ -76,6 +76,15 @@ chmod +x /usr/bin/dels
 chmod +x /usr/bin/menussh
 chmod +x /usr/bin/usern
 chmod +x /usr/bin/menu
+chmod +x /usr/bin/menugo
+chmod +x /usr/bin/addtrgo
+chmod +x /usr/bin/cektrgo
+chmod +x /usr/bin/deltrgo
+chmod +x /usr/bin/renewtrgo
+chmod +x /usr/bin/trialtrojan
+chmod +x /usr/bin/trialtrojango
+chmod +x /usr/bin/trtl
+chmod +x /usr/bin/trtv
 #lain
 chmod +x /usr/bin/add-host
 chmod +x /usr/bin/domaingratis
