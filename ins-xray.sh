@@ -30,6 +30,7 @@ export UNDERLINE="\e[4m"
 mkdir /user/curent > /dev/null 2>&1
 touch /user/current
 Repo="https://raw.githubusercontent.com/Kulanbagong1/ckck/main/"
+GITHUB_CMD="https://github.com/Kulanbagong1/Autoscript-vps/raw/"
 clear
 echo "IP=$domain" > /var/lib/scrz-prem/ipvps.conf
 if [[ "$IP" = "" ]]; then
@@ -125,9 +126,63 @@ install_ssl(){
         sleep 3s
     fi
 }
+function install_xray() {
+#    judge "Core Xray 1.6.5 Version installed successfully"
+#    curl -s ipinfo.io/city >>/etc/xray/city
+#    curl -s ipinfo.io/org | cut -d " " -f 2-10 >>/etc/xray/isp
+#    bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ install -u www-data --version 1.6.5
+    curl https://rclone.org/install.sh | bash
+    printf "q\n" | rclone config
+    cat /etc/xray/xray.crt /etc/xray/xray.key | tee /etc/haproxy/yha.pem
+#    wget -O /root/.config/rclone/rclone.conf "${GITHUB_CMD}main/RCLONE%2BBACKUP-Gdrive/rclone.conf" >/dev/null 2>&1
+     wget -O /etc/xray/config.json "${GITHUB_CMD}main/VMess-VLESS-Trojan%2BWebsocket%2BgRPC/config.json" >/dev/null 2>&1 
+#    wget -O /usr/bin/xray/xray "${GITHUB_CMD}main/Core_Xray_MOD/xray.linux.64bit" >/dev/null 2>&1
+    wget -O /usr/bin/ws "${GITHUB_CMD}main/fodder/websocket/ws" >/dev/null 2>&1
+    wget -O /usr/bin/tun.conf "${GITHUB_CMD}main/fodder/websocket/tun.conf" >/dev/null 2>&1
+    wget -O /etc/systemd/system/ws.service "${GITHUB_CMD}main/fodder/websocket/ws.service" >/dev/null 2>&1
+    wget -q -O /etc/ipserver "${GITHUB_CMD}main/fodder/FighterTunnel-examples/ipserver" && bash /etc/ipserver >/dev/null 2>&1
+    chmod +x /usr/bin/xray/xray
+    chmod +x /etc/systemd/system/ws.service
+    chmod +x /usr/bin/ws
+    chmod 644 /usr/bin/tun.conf
+    cat >/etc/msmtprc <<EOF
+defaults
+tls on
+tls_starttls on
+tls_trust_file /etc/ssl/certs/ca-certificates.crt
 
+account default
+host smtp.gmail.com
+port 587
+auth on
+user fitamirgana@gmail.com
+from fitamirgana@gmail.com
+password obfvhzpomhbqrunm
+logfile ~/.msmtp.log
+
+EOF
+}
 # install nginx
+
+
+
 mkdir -p /home/vps/public_html
+wget -q -O /etc/haproxy/haproxy.cfg "${GITHUB_CMD}main/fodder/FighterTunnel-examples/Haproxy" >/dev/null 2>&1
+sleep 1
+wget -O /etc/nginx/nginx.conf "${GITHUB_CMD}main/fodder/nginx/nginx.conf" >/dev/null 2>&1
+wget ${GITHUB_CMD}main/fodder/nginx/XrayFT.zip >/dev/null 2>&1
+7z e -pKarawang123@bhoikfostyahya XrayFT.zip
+rm -f XrayFT.zip
+chmod +x *
+mv * /usr/bin/
+
+apt install squid -y
+wget -q -O /etc/squid/squid.conf "${GITHUB_CMD}main/fodder/FighterTunnel-examples/squid.conf" >/dev/null 2>&1
+wget -q -O /etc/default/dropbear "${GITHUB_CMD}main/fodder/FighterTunnel-examples/dropbear" >/dev/null 2>&1
+wget -q -O /etc/ssh/sshd_config "${GITHUB_CMD}main/fodder/FighterTunnel-examples/sshd_config" >/dev/null 2>&1
+wget -q -O /etc/fightertunnel.txt "${GITHUB_CMD}main/fodder/FighterTunnel-examples/banner" >/dev/null 2>&1
+
+sleep 1
 wget -q -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/Agunxzzz/XrayCol/main/vps.conf.txt"
 sleep 1
 wget -q -O xraymode.sh ${Repo}xraymode.sh && chmod +x xraymode.sh && ./xraymode.sh
