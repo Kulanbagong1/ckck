@@ -14,10 +14,10 @@ Repo="https://raw.githubusercontent.com/Kulanbagong1/ckck/main/"
 Repo1="https://raw.githubusercontent.com/Kulanbagong1/izinn/main/"
 COLOR1='\033[0;35m'
 COLOR2='\033[0;39m'
-clear
+
 #Polder
 UDPCORE="https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1S3IE25v_fyUfCLslnujFBSBMNunDHDk2' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1S3IE25v_fyUfCLslnujFBSBMNunDHDk2"
-
+clear
 # // Exporting Language to UTF-8
 export LC_ALL='en_US.UTF-8'
 export LANG='en_US.UTF-8'
@@ -113,7 +113,7 @@ echo -e "$COLOR1─────────────────────�
 echo -e " ${CYAN}[01]${NC} • [SSH MENU${NC}]     ${CYAN}[04]${NC} • [TROJAN${NC}]"
 echo -e " ${CYAN}[02]${NC} • [VMESS${NC}]        ${CYAN}[05]${NC} • [SSWS ${NC}]"
 echo -e " ${CYAN}[03]${NC} • [VLESS${NC}]        ${CYAN}[06]${NC} • [Trojan Go ${NC}]"
-echo -e " ${CYAN}[07]${NC} • [BUAT AKUN UDP{NC}] ${CYAN}[70]${NC} • [DNS AKUN{NC}]"
+echo -e " ${CYAN}[07]${NC} • [INSTALL UDP{NC}] ${CYAN}[70]${NC} • [DNS AKUN{NC}]"
 echo -e "$COLOR1────────────────────────────────────────────────────────────${NC}"
 echo -e " ${CYAN}[08]${NC} • [ADD-HOST${NC}]          ${CYAN}[15]${NC} • [RESTART SERVICE${NC}]     "
 echo -e " ${CYAN}[09]${NC} • [GEN-CERT${NC}]          ${CYAN}[16]${NC} • [AUTO-POINTING${NC}] "
