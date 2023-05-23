@@ -51,52 +51,6 @@ wget -q -O /usr/bin/cek-speed "${Repo}Menu%20Final/Lain/speedtes_cli.py && chmod
 wget -q -O /usr/bin/cek-trafik "${Repo}Menu%20Final/Lain/cek-trafik.sh && chmod +x /usr/bin/menuv && bash /usr/bin/cek-trafik"
 
 
-chmod +x /usr/bin/menuv
-chmod +x /usr/bin/addv
-chmod +x /usr/bin/cekv
-chmod +x /usr/bin/renev
-chmod +x /usr/bin/delv
-chmod +x /usr/bin/menul
-chmod +x /usr/bin/addl
-chmod +x /usr/bin/cekl
-chmod +x /usr/bin/renel
-chmod +x /usr/bin/dell
-chmod +x /usr/bin/xp
-chmod +x /usr/bin/clog
-chmod +x /usr/bin/menut
-chmod +x /usr/bin/addt
-chmod +x /usr/bin/cekt
-chmod +x /usr/bin/renet
-chmod +x /usr/bin/delt
-chmod +x /usr/bin/menus
-chmod +x /usr/bin/adds
-chmod +x /usr/bin/ceks
-chmod +x /usr/bin/renes
-chmod +x /usr/bin/dels
-chmod +x /usr/bin/menussh
-chmod +x /usr/bin/usern
-chmod +x /usr/bin/menu
-chmod +x /usr/bin/menugo
-chmod +x /usr/bin/addtrgo
-chmod +x /usr/bin/cektrgo
-chmod +x /usr/bin/deltrgo
-chmod +x /usr/bin/renewtrgo
-chmod +x /usr/bin/trialtrojan
-chmod +x /usr/bin/trialtrojango
-chmod +x /usr/bin/trtl
-chmod +x /usr/bin/trtv
-#lain
-chmod +x /usr/bin/add-host
-chmod +x /usr/bin/domaingratis
-chmod +x /usr/bin/cek-bandwidth
-chmod +x /usr/bin/updatsc
-chmod +x /usr/bin/clearlog
-chmod +x /usr/bin/genssl
-chmod +x /usr/bin/restartsc
-chmod +x /usr/bin/running
-chmod +x /usr/bin/cek-speed
-chmod +x /usr/bin/cek-trafik
-
-echo "selesai bang"
+echo "INSTALL SELESAI"
 sleep 2
 cd
