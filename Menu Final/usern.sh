@@ -100,6 +100,15 @@ echo -e "SSH-WS : $portsshws" | tee -a /etc/log-create-user.log
 echo -e "SSH-SSL-WS : $wsssl" | tee -a /etc/log-create-user.log
 echo -e "SSL/TLS : $ssl" | tee -a /etc/log-create-user.log
 echo -e "UDPGW : 7100-7300" | tee -a /etc/log-create-user.log
+echo -e "OpenVPN-SSL : 443" | tee -a /etc/log-create-user.log
+echo -e "OpenVPN-WS-SSL : 443" | tee -a /etc/log-create-user.log
+echo -e "OpenVPN-TCP : 443,1194" | tee -a /etc/log-create-user.log
+echo -e "OpenVPN-UDP : 2200" | tee -a /etc/log-create-user.log
+echo -e "Nginix : 81" | tee -a /etc/log-create-user.log
+echo -e "Nginix-WS : 443" | tee -a /etc/log-create-user.log
+echo -e "Haproxy Loadbalancer : 443,80" | tee -a /etc/log-create-user.log
+echo -e "DNS Server : 443,53,2222" | tee -a /etc/log-create-user.log
+echo -e "DNS Clinte : 443,88" | tee -a /etc/log-create-user.log
 echo -e "PubKey : $Pub2" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1─────────────────────────────────────────────────${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1─────────────────────────────────────────────────${NC}" | tee -a /etc/log-create-user.log
