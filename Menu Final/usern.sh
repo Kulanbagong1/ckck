@@ -112,6 +112,11 @@ echo -e "DNS Clinte : 443,88" | tee -a /etc/log-create-user.log
 echo -e "PubKey : $Pub2" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1─────────────────────────────────────────────────${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1─────────────────────────────────────────────────${NC}" | tee -a /etc/log-create-user.log
+echo -e "OVPN TCP    : http://$demon:81/tcp.ovpn" | tee -a /etc/log-create-user.log
+echo -e "OVPN UDP    : http://$demon:81/udp.ovpn" | tee -a /etc/log-create-user.log
+echo -e "OVPN SSL    : http://$demon:81/ssl.ovpn" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1─────────────────────────────────────────────────${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1─────────────────────────────────────────────────${NC}" | tee -a /etc/log-create-user.log
 echo -e "\E[0;41;36m            AKUN DNS           \E[0m" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1─────────────────────────────────────────────────${NC}" | tee -a /etc/log-create-user.log
 echo -e "1.1.1.1:${Pub2}@${Login}:${Pass}@${nsdomain}" | tee -a /etc/log-create-user.log
@@ -138,9 +143,10 @@ GET wss://bug.com/ [protocol][crlf]Host: $domen[crlf]Connection: Keep-Alive[crlf
 " | tee -a /etc/log-create-user.log
 echo -e "$COLOR1─────────────────────────────────────────────────${NC}" | tee -a /etc/log-create-user.log
 else
-echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1│${NC}                • SSH PANEL MENU •              ${NC} $COLOR1│$NC" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
+echo -e "$COLOR1│${NC}                • SSH PANEL MENU •              ${NC} $COLOR1│$NC"
+echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
+echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "Username : $Login" | tee -a /etc/log-create-user.log
 echo -e "Password : $Pass" | tee -a /etc/log-create-user.log
 echo -e "Expired On : $exp" | tee -a /etc/log-create-user.log
@@ -148,16 +154,30 @@ echo -e "$COLOR1─────────────────────�
 echo -e "IP Address : $IP" | tee -a /etc/log-create-user.log
 echo -e "Host : $domen" | tee -a /etc/log-create-user.log
 echo -e "NsDomain : $nsdomain" | tee -a /etc/log-create-user.log
-echo -e "OpenSSH : $opensh" | tee -a /etc/log-create-user.log
+echo -e "OpenSSH : 22, 2222, 2269, 53 " | tee -a /etc/log-create-user.log
 echo -e "Dropbear : $db" | tee -a /etc/log-create-user.log
 echo -e "SSH-WS : $portsshws" | tee -a /etc/log-create-user.log
 echo -e "SSH-SSL-WS : $wsssl" | tee -a /etc/log-create-user.log
 echo -e "SSL/TLS : $ssl" | tee -a /etc/log-create-user.log
 echo -e "UDPGW : 7100-7300" | tee -a /etc/log-create-user.log
+echo -e "OpenVPN-SSL : 443" | tee -a /etc/log-create-user.log
+echo -e "OpenVPN-WS-SSL : 443" | tee -a /etc/log-create-user.log
+echo -e "OpenVPN-TCP : 443,1194" | tee -a /etc/log-create-user.log
+echo -e "OpenVPN-UDP : 2200" | tee -a /etc/log-create-user.log
+echo -e "Nginix : 81" | tee -a /etc/log-create-user.log
+echo -e "Nginix-WS : 443" | tee -a /etc/log-create-user.log
+echo -e "Haproxy Loadbalancer : 443,80" | tee -a /etc/log-create-user.log
+echo -e "DNS Server : 443,53,2222" | tee -a /etc/log-create-user.log
+echo -e "DNS Clinte : 443,88" | tee -a /etc/log-create-user.log
 echo -e "PubKey : $Pub2" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1─────────────────────────────────────────────────${NC}" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1─────────────────────────────────────────────────${NC}" | tee -a /etc/log-create-user.log
-echo -e "\E[0;41;36m            AKUN SLOWDNS            \E[0m" | tee -a /etc/log-create-user.log
+echo -e "OVPN TCP    : http://$demon:81/tcp.ovpn" | tee -a /etc/log-create-user.log
+echo -e "OVPN UDP    : http://$demon:81/udp.ovpn" | tee -a /etc/log-create-user.log
+echo -e "OVPN SSL    : http://$demon:81/ssl.ovpn" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1─────────────────────────────────────────────────${NC}" | tee -a /etc/log-create-user.log
+echo -e "$COLOR1─────────────────────────────────────────────────${NC}" | tee -a /etc/log-create-user.log
+echo -e "\E[0;41;36m            AKUN DNS           \E[0m" | tee -a /etc/log-create-user.log
 echo -e "$COLOR1─────────────────────────────────────────────────${NC}" | tee -a /etc/log-create-user.log
 echo -e "1.1.1.1:${Pub2}@${Login}:${Pass}@${nsdomain}" | tee -a /etc/log-create-user.log
 echo -e "8.8.8.8:${Pub2}@${Login}:${Pass}@${nsdomain}" | tee -a /etc/log-create-user.log
@@ -165,7 +185,7 @@ echo -e "$COLOR1─────────────────────�
 echo -e "Port UDP         : 54-65535" | tee -a /etc/log-create-user.log
 echo -e "      Account UDP      " | tee -a /etc/log-create-user.log
 echo -e "$domain:54-65535@$LOGIN:$PASSWD" | tee -a /etc/log-create-user.log
-echo -e "$COLOR1─────────────────────────────────────────────────${NC}" | te -a /etc/log-create-user.log
+echo -e "$COLOR1─────────────────────────────────────────────────${NC}" | tee -a /etc/log-create-user.log
 echo -e "
 GET / [protocol][crlf]Host: [host][crlf]Connection: Keep-Alive[crlf]Connection: Upgrade[crlf]Upgrade: websocket[crlf][crlf]
 " | tee -a /etc/log-create-user.log
